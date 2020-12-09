@@ -36,11 +36,17 @@ header{
         h2{
             margin-left: 20px;
         }
+        #li-color{
+            li{
+            background-color: lighten($color: $primary, $amount: 33)
+            }
+        }
         li{
             width: 80%;
             height: auto;
-            padding: 30px 10px 30px 30px;
-            margin-bottom: 30px;
+            box-shadow: 4px 4px 20px silver;
+            padding: 40px 10px 40px 30px;
+            margin-bottom: 40px;
             border-radius: 40px;
             border: 1px solid rgba(223, 222, 222, 0.486);
             background: rgba(223, 222, 222, 0.486);

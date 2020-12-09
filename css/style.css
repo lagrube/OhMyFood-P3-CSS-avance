@@ -38,6 +38,11 @@ section .image_nouveau p {
   font-weight: bold;
 }
 
+footer p {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
+}
+
 button {
   font-size: 1em;
   padding: 30px;
@@ -85,11 +90,15 @@ header nav {
 header nav h2 {
   margin-left: 20px;
 }
+header nav #li-color li {
+  background-color: #ece1f9;
+}
 header nav li {
   width: 80%;
   height: auto;
-  padding: 30px 10px 30px 30px;
-  margin-bottom: 30px;
+  box-shadow: 4px 4px 20px silver;
+  padding: 40px 10px 40px 30px;
+  margin-bottom: 40px;
   border-radius: 40px;
   border: 1px solid rgba(223, 222, 222, 0.486);
   background: rgba(223, 222, 222, 0.486);
@@ -144,6 +153,7 @@ section .restaurant .image_nouveau p {
   margin-right: 20px;
   position: relative;
   bottom: 420px;
+  border-radius: 5px;
 }
 section .restaurant .image_nouveau img {
   width: 100%;
@@ -157,8 +167,9 @@ section .restaurant .image img {
 }
 section .restaurant .description__nouveau {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
   position: relative;
   bottom: 110px;
   align-items: center;
@@ -188,8 +199,9 @@ section .restaurant .description__nouveau .fa-heart:active {
 }
 section .restaurant .description {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
   align-items: center;
 }
 section .restaurant .description .description__gauche h3 {
@@ -209,15 +221,23 @@ section .restaurant .description .description__gauche h3 a:hover {
 section .restaurant .description .description__gauche p {
   margin-top: 15px;
 }
+section .restaurant .description .fa-heart:hover {
+  cursor: pointer;
+}
+section .restaurant .description .fa-heart:active {
+  color: #9356DC;
+}
 
 footer {
   background-color: #313131;
   padding: 50px 0 70px 50px;
   color: white;
 }
-footer img {
-  color: white;
-  width: 200px;
+footer p {
+  margin-top: 10px;
+}
+footer ul {
+  padding-left: 0px;
 }
 footer ul li {
   margin-bottom: 20px;

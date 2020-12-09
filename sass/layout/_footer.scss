@@ -1,0 +1,21 @@
+footer{
+    background-color: rgb(49, 49, 49);
+    padding: 50px 0 70px 50px;
+    color: white;
+    img{
+        color: white;
+        width: 200px;
+    }
+    ul{
+        li{
+            margin-bottom: 20px;
+            list-style: none;
+            .foot1{
+                margin-right: 30px;
+            }
+            .foot2{
+                margin-right: 19px;
+            }
+        }
+    }
+}

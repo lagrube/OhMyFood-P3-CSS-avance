@@ -1,0 +1,145 @@
+body {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 799px) {
+  body {
+    width: 98%;
+    min-width: 321px;
+  }
+}
+
+/*
+    logo et titre
+        font-family: 'Shrikhand', cursive;
+    texte
+        font-family: 'Roboto', sans-serif; 
+
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header button {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+header li {
+  font-weight: bold;
+}
+
+section .image_nouveau p {
+  font-weight: bold;
+}
+
+button {
+  font-size: 1em;
+  padding: 30px;
+  border-radius: 60px;
+  margin-top: 60px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-style: none;
+}
+
+header {
+  margin: 30px 0 80px;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  margin-bottom: 30px;
+}
+header #def #lieu {
+  background-color: #dfdfdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #def #lieu .fa-map-marker-alt {
+  margin-right: 20px;
+}
+header #def #presentation {
+  background-color: rgba(223, 222, 222, 0.486);
+  text-align: center;
+  padding: 100px 0 80px;
+}
+header #def #presentation h1 {
+  margin: 0 100px 40px 100px;
+}
+header #def #presentation p {
+  margin: 0 30px 0 30px;
+}
+header nav {
+  margin: auto;
+  width: 90%;
+}
+header nav h2 {
+  margin-left: 20px;
+}
+header nav li {
+  width: 80%;
+  height: auto;
+  padding: 30px 10px 30px 30px;
+  margin-bottom: 30px;
+  border-radius: 40px;
+  border: 1px solid rgba(223, 222, 222, 0.486);
+  background: rgba(223, 222, 222, 0.486);
+  list-style: none;
+  counter-increment: repas;
+}
+header nav li .nav {
+  margin: 0 30px 0 30px;
+}
+header nav li .grey {
+  color: #707070;
+}
+header nav li .primary {
+  color: #9356DC;
+}
+header nav li:before {
+  content: counter(repas);
+  padding: 8px 15px 8px 15px;
+  display: block;
+  position: absolute;
+  left: 60px;
+  background: #9356DC;
+  border-radius: 60px;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: white;
+}
+
+section {
+  background: rgba(223, 222, 222, 0.486);
+}
+section h2 {
+  padding: 70px 0 0 40px;
+}
+section .restaurant {
+  margin: auto;
+  width: 85%;
+  border-radius: 30px;
+  background: white;
+  background: url("../img/palettedugout.jpg") no-repeat;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+section .restaurant .image_nouveau p {
+  background-color: #99E2D0;
+  width: 160px;
+  text-align: center;
+  padding: 10px;
+  color: #2c9c81;
+}
+
+/*# sourceMappingURL=style.css.map */

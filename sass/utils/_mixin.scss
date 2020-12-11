@@ -14,70 +14,47 @@
 }
 
 @mixin coeur{
-    display: block;
-    position: relative; 
-    width: 40px; 
-    height: 40px;
-    background-color: rgb(214, 214, 214);
-    -webkit-transform: rotate(45deg); 
-    -moz-transform: rotate(45deg); 
-    -ms-transform: rotate(45deg); 
-    -o-transform: rotate(45deg); 
-    transform: rotate(45deg);
-    .progress__heart{
-        transform-origin: 0%;
-        transform: scaleX(0);
-        transition:  transform 1000ms;
-        &:active{
-        transform: scaleX(1);
+    @keyframes coeur{
+        0% {
+            color: $primary;
+            opacity: 0.1;
         }
-    } 
-        &:before{
-        position: absolute; 
-        bottom: 0px; 
-        left: -15px; 
-        width: 40px; 
-        height: 40px; 
-        content: ''; 
-        -webkit-border-radius: 50%; 
-        -moz-border-radius: 50%; 
-        -o-border-radius: 50%; 
-        border-radius: 50%; 
-        background-color: rgb(214, 214, 214);
-        } 
-        &:after{
-        position: absolute; 
-        top: -20px; 
-        right: 0px; 
-        width: 40px; 
-        height: 40px; 
-        content: ''; 
-        -webkit-border-radius: 50%; 
-        -moz-border-radius: 50%; 
-        -o-border-radius: 50%; 
-        border-radius: 50%; 
-        background-color: rgb(214, 214, 214); 
+        30% {
+            color: $primary;
+            opacity: 0.3;
+            }
+        50% {
+            color: $primary;
+            opacity: 0.5;
         }
-        &:before, &:after{
-        position: absolute; 
-        width: 40px; 
-        height: 40px; 
-        content: ''; 
-        -webkit-border-radius: 50%; 
-        -moz-border-radius: 50%; 
-        -o-border-radius: 50%;
-        border-radius: 50%; 
-        background-color: rgb(214, 214, 214);
+        80% {
+            color: $primary;
+            opacity: 0.8;
         }
-        &:before{
-        bottom: 0px; 
-        left: -20px; 
-        } 
-        &:after{
-        top: -20px; 
-        right: 0px; 
-        } 
-        &:hover{
-            cursor: pointer;
-        }   
+        100% {
+            color: $primary;
+            opacity: 1;
+        }
     }
+    color: rgb(214, 214, 214);
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        animation: coeur 1500ms;
+        animation-fill-mode: both;
+        color: $primary;
+    }   
+}
+
+@mixin titre__resto{
+    text-decoration: none;
+    color: black;
+    display: block;
+    transform: scale(1);
+    transition: transform 400ms, color 300ms;
+    &:hover{
+        transform: scale(1.2);
+        color: $primary;
+    }                    
+}

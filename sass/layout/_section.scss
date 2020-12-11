@@ -50,22 +50,14 @@ section{
                 h3{
                     margin: 0;
                     a{
-                        text-decoration: none;
-                        color: black;
-                        display: block;
-                        transform: scale(1);
-                        transition: transform 400ms, color 300ms;
-                        &:hover{
-                            transform: scale(1.2);
-                            color: $primary;
-                        }
+                        @include titre__resto;
                     }
                 }
                 p{
                     margin-top: 15px;
                 }
             }
-            .heart{
+            .fa-heart{
                 @include coeur;
             }
         }
@@ -79,24 +71,16 @@ section{
                 h3{
                     margin: 10px 0;
                     a{
-                        text-decoration: none;
-                        color: black;
-                        display: block;
-                        transform: scale(1);
-                        transition: transform 400ms, color 300ms;
-                        &:hover{
-                            transform: scale(1.2);
-                            color: $primary;
-                        }
+                        @include titre__resto;
                     }
                 }
                 p{
                     margin-top: 15px;
                 }
             }
-            .heart{
+            .fa-heart{ 
                 @include coeur;
-            } 
+            }
         }
     }
 }

@@ -56,6 +56,7 @@ header{
             }
             &:hover{
                 background-color: lighten($color: $primary, $amount: 33);
+                box-shadow: 20px 20px px silver;
                 .grey{
                     color: $primary;
                 }
@@ -63,9 +64,8 @@ header{
             &:before{
             content: counter(repas);
             padding: 8px 15px 8px 15px;
-            display: block;
-            position: absolute;
-            left: 60px;
+            position: relative;
+            left: -52px;      
 	        background: $primary;
 	        border-radius: 60px;
 	        font-weight: bold;

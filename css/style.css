@@ -4,7 +4,7 @@ body {
 }
 @media screen and (max-width: 799px) {
   body {
-    width: 98%;
+    width: 100%;
     min-width: 321px;
   }
 }
@@ -53,8 +53,8 @@ button {
   border-style: none;
 }
 button:hover {
-  box-shadow: 3px 3px 50px #9356DC;
-  opacity: 0.9;
+  box-shadow: 5px 5px 20px #9356DC;
+  opacity: 0.8;
 }
 
 header {
@@ -114,6 +114,7 @@ header nav li .grey {
 }
 header nav li:hover {
   background-color: #ece1f9;
+  box-shadow: 20px 20px px silver;
 }
 header nav li:hover .grey {
   color: #9356DC;
@@ -121,9 +122,8 @@ header nav li:hover .grey {
 header nav li:before {
   content: counter(repas);
   padding: 8px 15px 8px 15px;
-  display: block;
-  position: absolute;
-  left: 60px;
+  position: relative;
+  left: -52px;
   background: #9356DC;
   border-radius: 60px;
   font-weight: bold;
@@ -195,73 +195,38 @@ section .restaurant .description__nouveau .description__gauche h3 a:hover {
 section .restaurant .description__nouveau .description__gauche p {
   margin-top: 15px;
 }
-section .restaurant .description__nouveau .heart {
-  display: block;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-color: #d6d6d6;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+section .restaurant .description__nouveau .fa-heart {
+  color: #d6d6d6;
 }
-section .restaurant .description__nouveau .heart .progress__heart {
-  transform-origin: 0%;
-  transform: scaleX(0);
-  transition: transform 1000ms;
+@keyframes coeur {
+  0% {
+    color: #9356DC;
+    opacity: 0.1;
+  }
+  30% {
+    color: #9356DC;
+    opacity: 0.3;
+  }
+  50% {
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  80% {
+    color: #9356DC;
+    opacity: 0.8;
+  }
+  100% {
+    color: #9356DC;
+    opacity: 1;
+  }
 }
-section .restaurant .description__nouveau .heart .progress__heart:active {
-  transform: scaleX(1);
-}
-section .restaurant .description__nouveau .heart:before {
-  position: absolute;
-  bottom: 0px;
-  left: -15px;
-  width: 40px;
-  height: 40px;
-  content: "";
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d6d6d6;
-}
-section .restaurant .description__nouveau .heart:after {
-  position: absolute;
-  top: -20px;
-  right: 0px;
-  width: 40px;
-  height: 40px;
-  content: "";
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d6d6d6;
-}
-section .restaurant .description__nouveau .heart:before, section .restaurant .description__nouveau .heart:after {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  content: "";
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d6d6d6;
-}
-section .restaurant .description__nouveau .heart:before {
-  bottom: 0px;
-  left: -20px;
-}
-section .restaurant .description__nouveau .heart:after {
-  top: -20px;
-  right: 0px;
-}
-section .restaurant .description__nouveau .heart:hover {
+section .restaurant .description__nouveau .fa-heart:hover {
   cursor: pointer;
+}
+section .restaurant .description__nouveau .fa-heart:active {
+  animation: coeur 1500ms;
+  animation-fill-mode: both;
+  color: #9356DC;
 }
 section .restaurant .description {
   display: flex;
@@ -287,73 +252,38 @@ section .restaurant .description .description__gauche h3 a:hover {
 section .restaurant .description .description__gauche p {
   margin-top: 15px;
 }
-section .restaurant .description .heart {
-  display: block;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-color: #d6d6d6;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+section .restaurant .description .fa-heart {
+  color: #d6d6d6;
 }
-section .restaurant .description .heart .progress__heart {
-  transform-origin: 0%;
-  transform: scaleX(0);
-  transition: transform 1000ms;
+@keyframes coeur {
+  0% {
+    color: #9356DC;
+    opacity: 0.1;
+  }
+  30% {
+    color: #9356DC;
+    opacity: 0.3;
+  }
+  50% {
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  80% {
+    color: #9356DC;
+    opacity: 0.8;
+  }
+  100% {
+    color: #9356DC;
+    opacity: 1;
+  }
 }
-section .restaurant .description .heart .progress__heart:active {
-  transform: scaleX(1);
-}
-section .restaurant .description .heart:before {
-  position: absolute;
-  bottom: 0px;
-  left: -15px;
-  width: 40px;
-  height: 40px;
-  content: "";
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d6d6d6;
-}
-section .restaurant .description .heart:after {
-  position: absolute;
-  top: -20px;
-  right: 0px;
-  width: 40px;
-  height: 40px;
-  content: "";
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d6d6d6;
-}
-section .restaurant .description .heart:before, section .restaurant .description .heart:after {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  content: "";
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d6d6d6;
-}
-section .restaurant .description .heart:before {
-  bottom: 0px;
-  left: -20px;
-}
-section .restaurant .description .heart:after {
-  top: -20px;
-  right: 0px;
-}
-section .restaurant .description .heart:hover {
+section .restaurant .description .fa-heart:hover {
   cursor: pointer;
+}
+section .restaurant .description .fa-heart:active {
+  animation: coeur 1500ms;
+  animation-fill-mode: both;
+  color: #9356DC;
 }
 
 footer {
@@ -376,6 +306,53 @@ footer ul li .foot1 {
 }
 footer ul li .foot2 {
   margin-right: 19px;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#animation-page {
+  animation: body 1000ms;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-360deg);
+    border-top: none;
+  }
+}
+.spinner {
+  box-sizing: border-box;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  border-top: 2px solid #07d;
+  border-right: 2px solid transparent;
+  animation: spinner 1200ms linear;
+  animation-fill-mode: both;
 }
 
 /*# sourceMappingURL=style.css.map */

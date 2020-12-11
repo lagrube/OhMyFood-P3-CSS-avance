@@ -60,8 +60,7 @@ header{
                     color: $primary;
                 }
             }
-        }
-        li:before{
+            &:before{
             content: counter(repas);
             padding: 8px 15px 8px 15px;
             display: block;
@@ -72,6 +71,7 @@ header{
 	        font-weight: bold;
 	        font-size: 0.8em;
             color: white;
+            }
         }    
     }
 }

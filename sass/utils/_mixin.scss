@@ -12,3 +12,72 @@
     position: relative;
     bottom: 100px; 
 }
+
+@mixin coeur{
+    display: block;
+    position: relative; 
+    width: 40px; 
+    height: 40px;
+    background-color: rgb(214, 214, 214);
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg);
+    .progress__heart{
+        transform-origin: 0%;
+        transform: scaleX(0);
+        transition:  transform 1000ms;
+        &:active{
+        transform: scaleX(1);
+        }
+    } 
+        &:before{
+        position: absolute; 
+        bottom: 0px; 
+        left: -15px; 
+        width: 40px; 
+        height: 40px; 
+        content: ''; 
+        -webkit-border-radius: 50%; 
+        -moz-border-radius: 50%; 
+        -o-border-radius: 50%; 
+        border-radius: 50%; 
+        background-color: rgb(214, 214, 214);
+        } 
+        &:after{
+        position: absolute; 
+        top: -20px; 
+        right: 0px; 
+        width: 40px; 
+        height: 40px; 
+        content: ''; 
+        -webkit-border-radius: 50%; 
+        -moz-border-radius: 50%; 
+        -o-border-radius: 50%; 
+        border-radius: 50%; 
+        background-color: rgb(214, 214, 214); 
+        }
+        &:before, &:after{
+        position: absolute; 
+        width: 40px; 
+        height: 40px; 
+        content: ''; 
+        -webkit-border-radius: 50%; 
+        -moz-border-radius: 50%; 
+        -o-border-radius: 50%;
+        border-radius: 50%; 
+        background-color: rgb(214, 214, 214);
+        }
+        &:before{
+        bottom: 0px; 
+        left: -20px; 
+        } 
+        &:after{
+        top: -20px; 
+        right: 0px; 
+        } 
+        &:hover{
+            cursor: pointer;
+        }   
+    }

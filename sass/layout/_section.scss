@@ -65,14 +65,8 @@ section{
                     margin-top: 15px;
                 }
             }
-            .fa-heart{
-                color: rgb(214, 214, 214);
-                &:hover{
-                    cursor: pointer;
-                }
-                &:active{
-                    color: $primary;
-                }
+            .heart{
+                @include coeur;
             }
         }
         .description{
@@ -100,18 +94,9 @@ section{
                     margin-top: 15px;
                 }
             }
-            .fa-heart{
-                color: rgb(214, 214, 214);
-                transform: scale(1);
-                transition: transform 400ms, color 3000ms;
-                &:hover{
-                    cursor: pointer;
-                }
-                &:active{
-                    transform: scaleX(1.1);
-                    color: $primary;
-                }
-            }
+            .heart{
+                @include coeur;
+            } 
         }
     }
 }

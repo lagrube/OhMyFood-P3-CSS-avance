@@ -66,6 +66,7 @@ section{
                 }
             }
             .fa-heart{
+                color: rgb(214, 214, 214);
                 &:hover{
                     cursor: pointer;
                 }
@@ -100,10 +101,14 @@ section{
                 }
             }
             .fa-heart{
+                color: rgb(214, 214, 214);
+                transform: scale(1);
+                transition: transform 400ms, color 3000ms;
                 &:hover{
                     cursor: pointer;
                 }
                 &:active{
+                    transform: scaleX(1.1);
                     color: $primary;
                 }
             }

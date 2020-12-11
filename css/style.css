@@ -52,6 +52,10 @@ button {
   color: white;
   border-style: none;
 }
+button:hover {
+  box-shadow: 3px 3px 50px #9356DC;
+  opacity: 0.9;
+}
 
 header {
   margin: 30px 0 80px;
@@ -90,9 +94,6 @@ header nav {
 header nav h2 {
   margin-left: 20px;
 }
-header nav #li-color li {
-  background-color: #ece1f9;
-}
 header nav li {
   width: 80%;
   height: auto;
@@ -111,7 +112,10 @@ header nav li .nav {
 header nav li .grey {
   color: #707070;
 }
-header nav li .primary {
+header nav li:hover {
+  background-color: #ece1f9;
+}
+header nav li:hover .grey {
   color: #9356DC;
 }
 header nav li:before {
@@ -191,6 +195,9 @@ section .restaurant .description__nouveau .description__gauche h3 a:hover {
 section .restaurant .description__nouveau .description__gauche p {
   margin-top: 15px;
 }
+section .restaurant .description__nouveau .fa-heart {
+  color: #d6d6d6;
+}
 section .restaurant .description__nouveau .fa-heart:hover {
   cursor: pointer;
 }
@@ -221,10 +228,16 @@ section .restaurant .description .description__gauche h3 a:hover {
 section .restaurant .description .description__gauche p {
   margin-top: 15px;
 }
+section .restaurant .description .fa-heart {
+  color: #d6d6d6;
+  transform: scale(1);
+  transition: transform 400ms, color 3000ms;
+}
 section .restaurant .description .fa-heart:hover {
   cursor: pointer;
 }
 section .restaurant .description .fa-heart:active {
+  transform: scaleX(1.1);
   color: #9356DC;
 }
 

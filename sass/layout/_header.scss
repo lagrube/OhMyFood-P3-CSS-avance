@@ -36,11 +36,6 @@ header{
         h2{
             margin-left: 20px;
         }
-        #li-color{
-            li{
-            background-color: lighten($color: $primary, $amount: 33)
-            }
-        }
         li{
             width: 80%;
             height: auto;
@@ -59,8 +54,11 @@ header{
             .grey{
                 color: rgb(112, 112, 112);
             }
-            .primary{
-                color: $primary;
+            &:hover{
+                background-color: lighten($color: $primary, $amount: 33);
+                .grey{
+                    color: $primary;
+                }
             }
         }
         li:before{

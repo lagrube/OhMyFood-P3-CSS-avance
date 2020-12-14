@@ -196,10 +196,12 @@ section .restaurant .description__nouveau .description__gauche p {
   margin-top: 15px;
 }
 section .restaurant .description__nouveau .fa-heart {
+  transform-origin: 50% bottom;
   color: #d6d6d6;
 }
 @keyframes coeur {
   0% {
+    transform: scale(0.5);
     color: #9356DC;
     opacity: 0.1;
   }
@@ -216,6 +218,7 @@ section .restaurant .description__nouveau .fa-heart {
     opacity: 0.8;
   }
   100% {
+    transform: scale(1);
     color: #9356DC;
     opacity: 1;
   }
@@ -253,10 +256,12 @@ section .restaurant .description .description__gauche p {
   margin-top: 15px;
 }
 section .restaurant .description .fa-heart {
+  transform-origin: 50% bottom;
   color: #d6d6d6;
 }
 @keyframes coeur {
   0% {
+    transform: scale(0.5);
     color: #9356DC;
     opacity: 0.1;
   }
@@ -273,6 +278,7 @@ section .restaurant .description .fa-heart {
     opacity: 0.8;
   }
   100% {
+    transform: scale(1);
     color: #9356DC;
     opacity: 1;
   }

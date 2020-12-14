@@ -58,6 +58,7 @@ section{
                 }
             }
             .fa-heart{
+                transform-origin: 50% bottom;
                 @include coeur;
             }
         }
@@ -79,6 +80,7 @@ section{
                 }
             }
             .fa-heart{ 
+                transform-origin: 50% bottom;
                 @include coeur;
             }
         }

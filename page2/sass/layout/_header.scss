@@ -1,0 +1,19 @@
+header{
+    margin: 0 0 80px;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 12em;
+        margin-bottom: 30px;
+    }
+    .fa-arrow-left{
+        position: relative;
+        top: 55px;
+        margin-left: 50px;
+        color: black;
+        &:hover{
+            color: $primary;
+        }
+    }
+}

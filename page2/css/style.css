@@ -1,3 +1,155 @@
+body {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 799px) {
+  body {
+    width: 100%;
+    min-width: 321px;
+  }
+}
 
+/*
+    logo et titre
+        font-family: 'Shrikhand', cursive;
+    texte
+        font-family: 'Roboto', sans-serif; 
+
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+}
+
+header button {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+section h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
+}
+
+footer p {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
+}
+
+button {
+  font-size: 1em;
+  padding: 30px;
+  border-radius: 60px;
+  margin-top: 60px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-style: none;
+}
+button:hover {
+  box-shadow: 5px 5px 20px #9356DC;
+  opacity: 0.8;
+}
+
+header {
+  margin: 0 0 80px;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  margin-bottom: 30px;
+}
+header .fa-arrow-left {
+  position: relative;
+  top: 55px;
+  margin-left: 50px;
+  color: black;
+}
+header .fa-arrow-left:hover {
+  color: #9356DC;
+}
+
+section img {
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+section #contenair {
+  background-color: #f2f2f2;
+  position: relative;
+  bottom: 140px;
+  z-index: 2;
+  border-radius: 100px 100px 0;
+}
+section #contenair .titre {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+section #contenair .titre .fa-heart {
+  transform-origin: 50% bottom;
+  color: #d6d6d6;
+}
+@keyframes coeur {
+  0% {
+    transform: scale(0.5);
+    color: #9356DC;
+    opacity: 0.1;
+  }
+  80% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    transform-origin: center;
+    transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
+section #contenair .titre .fa-heart:hover {
+  cursor: pointer;
+}
+section #contenair .titre .fa-heart:active {
+  animation: coeur 1500ms;
+  animation-fill-mode: both;
+  color: #9356DC;
+}
+
+footer {
+  background-color: #313131;
+  padding: 50px 0 70px 50px;
+  color: white;
+}
+footer p {
+  margin-top: 10px;
+}
+footer ul {
+  padding-left: 0px;
+}
+footer ul li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+footer ul li .foot1 {
+  margin-right: 30px;
+}
+footer ul li .foot2 {
+  margin-right: 19px;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -205,15 +205,14 @@ section .restaurant .description__nouveau .fa-heart {
     color: #9356DC;
     opacity: 0.1;
   }
-  30% {
-    color: #9356DC;
-    opacity: 0.3;
-  }
-  50% {
+  80% {
+    transform: scale(1);
     color: #9356DC;
     opacity: 0.5;
   }
-  80% {
+  90% {
+    transform-origin: center;
+    transform: scale(0.8);
     color: #9356DC;
     opacity: 0.8;
   }
@@ -265,15 +264,14 @@ section .restaurant .description .fa-heart {
     color: #9356DC;
     opacity: 0.1;
   }
-  30% {
-    color: #9356DC;
-    opacity: 0.3;
-  }
-  50% {
+  80% {
+    transform: scale(1);
     color: #9356DC;
     opacity: 0.5;
   }
-  80% {
+  90% {
+    transform-origin: center;
+    transform: scale(0.8);
     color: #9356DC;
     opacity: 0.8;
   }

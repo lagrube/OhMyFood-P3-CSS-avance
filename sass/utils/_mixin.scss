@@ -20,19 +20,18 @@
             color: $primary;
             opacity: 0.1;
         }
-        30% {
-            color: $primary;
-            opacity: 0.3;
-            }
-        50% {
+        80% {
+            transform: scale(1);
             color: $primary;
             opacity: 0.5;
         }
-        80% {
+        90% {
+            transform-origin: center;
+            transform: scale(0.8);
             color: $primary;
             opacity: 0.8;
         }
-        100% {
+        100%{
             transform: scale(1);
             color: $primary;
             opacity: 1;

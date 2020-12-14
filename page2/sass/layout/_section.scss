@@ -19,10 +19,7 @@ section{
             align-items: center;
             padding-top: 20px;
             .fa-heart{
-                transform-origin: 50% bottom;
-                color: $greyfonce;
                 @include coeur;
-                animation-fill-mode: forwards;
             }
         }
         .entree{

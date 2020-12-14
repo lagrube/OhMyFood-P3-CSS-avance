@@ -1,4 +1,5 @@
 section{
+    background-color: $grey;
     img{
         width: 100%;
         height: 500px;
@@ -9,7 +10,7 @@ section{
         position: relative;
         bottom: 140px;
         z-index: 2;
-        border-radius: 100px 100px 0;
+        border-radius: 100px 100px;
         .titre{
             display: flex;
             width: 90%;
@@ -19,8 +20,37 @@ section{
             padding-top: 20px;
             .fa-heart{
                 transform-origin: 50% bottom;
+                color: $greyfonce;
                 @include coeur;
+                animation-fill-mode: forwards;
             }
+        }
+        .entree{
+            transform-origin: 50% top;
+            @include menu;
+            animation: entree 2000ms;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        .plat{
+            transform-origin: 50% top;
+            @include menu;
+            animation: plat 2000ms 1500ms;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        .dessert{
+            transform-origin: 50% top;
+            @include menu;
+            animation: dessert 2000ms 3000ms;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        button{
+            display: block;
+            width: 300px;
+            margin: auto;
+            margin-top: 100px;  
         }
     }
 }

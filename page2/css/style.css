@@ -1,3 +1,74 @@
+@keyframes entree {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes plat {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes dessert {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes coeur {
+  0% {
+    color: #d6d6d6;
+    transform: scale(0.5);
+    opacity: 0.1;
+  }
+  80% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    transform-origin: center;
+    transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
 body {
   width: 1200px;
   margin: auto;
@@ -29,6 +100,14 @@ header button {
 section h1 {
   font-family: "Shrikhand", cursive;
   font-size: 1.5em;
+}
+section h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+section .gras {
+  font-weight: bold;
 }
 
 footer p {
@@ -70,6 +149,9 @@ header .fa-arrow-left:hover {
   color: #9356DC;
 }
 
+section {
+  background-color: #f2f2f2;
+}
 section img {
   width: 100%;
   height: 500px;
@@ -80,7 +162,7 @@ section #contenair {
   position: relative;
   bottom: 140px;
   z-index: 2;
-  border-radius: 100px 100px 0;
+  border-radius: 100px 100px;
 }
 section #contenair .titre {
   display: flex;
@@ -93,37 +175,110 @@ section #contenair .titre {
 section #contenair .titre .fa-heart {
   transform-origin: 50% bottom;
   color: #d6d6d6;
-}
-@keyframes coeur {
-  0% {
-    transform: scale(0.5);
-    color: #9356DC;
-    opacity: 0.1;
-  }
-  80% {
-    transform: scale(1);
-    color: #9356DC;
-    opacity: 0.5;
-  }
-  90% {
-    transform-origin: center;
-    transform: scale(0.8);
-    color: #9356DC;
-    opacity: 0.2;
-  }
-  100% {
-    transform: scale(1);
-    color: #9356DC;
-    opacity: 1;
-  }
+  transform-origin: 50% bottom;
+  color: #d6d6d6;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
 }
 section #contenair .titre .fa-heart:hover {
   cursor: pointer;
 }
-section #contenair .titre .fa-heart:active {
+section #contenair .titre .fa-heart:not(:active) {
   animation: coeur 1500ms;
   animation-fill-mode: both;
-  color: #9356DC;
+}
+section #contenair .entree {
+  transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  animation: entree 2000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section #contenair .entree h2 {
+  width: 30%;
+  margin-left: 20px;
+  border-bottom: 5px solid #99E2D0;
+}
+section #contenair .entree .menu {
+  border-radius: 40px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+section #contenair .entree .menu h3 {
+  margin-top: 0px;
+}
+section #contenair .entree .menu .description_prix {
+  display: flex;
+  justify-content: space-between;
+}
+section #contenair .entree .menu .description_prix p {
+  margin: 0;
+}
+section #contenair .plat {
+  transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  animation: plat 2000ms 1500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section #contenair .plat h2 {
+  width: 30%;
+  margin-left: 20px;
+  border-bottom: 5px solid #99E2D0;
+}
+section #contenair .plat .menu {
+  border-radius: 40px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+section #contenair .plat .menu h3 {
+  margin-top: 0px;
+}
+section #contenair .plat .menu .description_prix {
+  display: flex;
+  justify-content: space-between;
+}
+section #contenair .plat .menu .description_prix p {
+  margin: 0;
+}
+section #contenair .dessert {
+  transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  animation: dessert 2000ms 3000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section #contenair .dessert h2 {
+  width: 30%;
+  margin-left: 20px;
+  border-bottom: 5px solid #99E2D0;
+}
+section #contenair .dessert .menu {
+  border-radius: 40px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+section #contenair .dessert .menu h3 {
+  margin-top: 0px;
+}
+section #contenair .dessert .menu .description_prix {
+  display: flex;
+  justify-content: space-between;
+}
+section #contenair .dessert .menu .description_prix p {
+  margin: 0;
+}
+section #contenair button {
+  display: block;
+  width: 300px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 footer {

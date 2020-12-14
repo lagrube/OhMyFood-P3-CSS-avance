@@ -6,36 +6,44 @@
 }
 
 @mixin coeur{
-    @keyframes coeur{
-        0% {
-            transform: scale(0.5);
-            color: $primary;
-            opacity: 0.1;
-        }
-        80% {
-            transform: scale(1);
-            color: $primary;
-            opacity: 0.5;
-        }
-        90% {
-            transform-origin: center;
-            transform: scale(0.8);
-            color: $primary;
-            opacity: 0.2;
-        }
-        100%{
-            transform: scale(1);
-            color: $primary;
-            opacity: 1;
-        }
-    }
-    color: rgb(214, 214, 214);
+    transform-origin: 50% bottom;
+    color: $greyfonce;
+    animation-play-state: paused;
     &:hover{
         cursor: pointer;
     }
-    &:active{
+    &:not(:active){
         animation: coeur 1500ms;
         animation-fill-mode: both;
-        color: $primary;
-    }   
+    } 
 }
+
+
+@mixin menu{
+    width: 90%;
+    margin: auto;
+    h2{
+        width: 30%;
+        margin-left: 20px;
+        border-bottom: 5px solid $tertiary;
+    }
+    .menu{
+        border-radius: 40px;
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 40px;
+        h3{
+            margin-top: 0px;
+        }
+        .description_prix{
+            display: flex;
+            justify-content: space-between;
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+

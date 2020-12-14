@@ -48,7 +48,6 @@
 }
 @keyframes coeur {
   0% {
-    color: #d6d6d6;
     transform: scale(0.5);
     opacity: 0.1;
   }
@@ -175,12 +174,9 @@ section #contenair .titre {
 section #contenair .titre .fa-heart {
   transform-origin: 50% bottom;
   color: #d6d6d6;
-  animation-play-state: paused;
 }
 section #contenair .titre .fa-heart:hover {
   cursor: pointer;
-}
-section #contenair .titre .fa-heart:not(:active) {
   animation: coeur 1500ms;
   animation-fill-mode: both;
 }

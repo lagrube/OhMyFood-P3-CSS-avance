@@ -10,12 +10,10 @@
     color: $greyfonce;
     &:hover{
         cursor: pointer;
-    }
-    &:active:before{
         animation: coeur 1500ms;
+        animation-fill-mode: both;
     } 
 }
-
 
 @mixin menu{
     width: 90%;

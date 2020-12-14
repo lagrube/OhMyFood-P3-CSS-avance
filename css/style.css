@@ -1,3 +1,25 @@
+@keyframes coeur {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.1;
+  }
+  80% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    transform-origin: center;
+    transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
 body {
   width: 1200px;
   margin: auto;
@@ -199,36 +221,10 @@ section .restaurant .description__nouveau .fa-heart {
   transform-origin: 50% bottom;
   color: #d6d6d6;
 }
-@keyframes coeur {
-  0% {
-    transform: scale(0.5);
-    color: #9356DC;
-    opacity: 0.1;
-  }
-  80% {
-    transform: scale(1);
-    color: #9356DC;
-    opacity: 0.5;
-  }
-  90% {
-    transform-origin: center;
-    transform: scale(0.8);
-    color: #9356DC;
-    opacity: 0.2;
-  }
-  100% {
-    transform: scale(1);
-    color: #9356DC;
-    opacity: 1;
-  }
-}
 section .restaurant .description__nouveau .fa-heart:hover {
   cursor: pointer;
-}
-section .restaurant .description__nouveau .fa-heart:active {
   animation: coeur 1500ms;
   animation-fill-mode: both;
-  color: #9356DC;
 }
 section .restaurant .description {
   display: flex;
@@ -258,36 +254,10 @@ section .restaurant .description .fa-heart {
   transform-origin: 50% bottom;
   color: #d6d6d6;
 }
-@keyframes coeur {
-  0% {
-    transform: scale(0.5);
-    color: #9356DC;
-    opacity: 0.1;
-  }
-  80% {
-    transform: scale(1);
-    color: #9356DC;
-    opacity: 0.5;
-  }
-  90% {
-    transform-origin: center;
-    transform: scale(0.8);
-    color: #9356DC;
-    opacity: 0.2;
-  }
-  100% {
-    transform: scale(1);
-    color: #9356DC;
-    opacity: 1;
-  }
-}
 section .restaurant .description .fa-heart:hover {
   cursor: pointer;
-}
-section .restaurant .description .fa-heart:active {
   animation: coeur 1500ms;
   animation-fill-mode: both;
-  color: #9356DC;
 }
 
 footer {

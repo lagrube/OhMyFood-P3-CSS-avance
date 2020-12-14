@@ -204,9 +204,10 @@ section #contenair .entree .menu {
   margin-bottom: 40px;
 }
 section #contenair .entree .menu h3 {
-  margin-top: 0px;
+  margin: 10px;
 }
 section #contenair .entree .menu .description_prix {
+  margin: 0 10px 0 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -233,9 +234,10 @@ section #contenair .plat .menu {
   margin-bottom: 40px;
 }
 section #contenair .plat .menu h3 {
-  margin-top: 0px;
+  margin: 10px;
 }
 section #contenair .plat .menu .description_prix {
+  margin: 0 10px 0 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -262,9 +264,10 @@ section #contenair .dessert .menu {
   margin-bottom: 40px;
 }
 section #contenair .dessert .menu h3 {
-  margin-top: 0px;
+  margin: 10px;
 }
 section #contenair .dessert .menu .description_prix {
+  margin: 0 10px 0 10px;
   display: flex;
   justify-content: space-between;
 }

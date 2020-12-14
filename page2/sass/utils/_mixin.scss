@@ -8,13 +8,11 @@
 @mixin coeur{
     transform-origin: 50% bottom;
     color: $greyfonce;
-    animation-play-state: paused;
     &:hover{
         cursor: pointer;
     }
-    &:not(:active){
+    &:active:before{
         animation: coeur 1500ms;
-        animation-fill-mode: both;
     } 
 }
 
@@ -33,9 +31,10 @@
         padding: 20px;
         margin-bottom: 40px;
         h3{
-            margin-top: 0px;
+            margin: 10px;
         }
         .description_prix{
+            margin: 0 10px 0 10px;
             display: flex;
             justify-content: space-between;
             p{

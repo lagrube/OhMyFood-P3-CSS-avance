@@ -129,7 +129,8 @@ header nav li {
   counter-increment: repas;
 }
 header nav li .nav {
-  margin: 0 30px 0 30px;
+  margin-right: 30px;
+  margin-left: 0;
 }
 header nav li .grey {
   color: #707070;

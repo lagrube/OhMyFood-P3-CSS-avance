@@ -81,9 +81,15 @@
   0% {
     transform: rotate(0deg);
   }
+  50% {
+    position: absolute;
+    left: 30px;
+  }
   100% {
     transform: rotate(360deg);
     opacity: 1;
+    position: absolute;
+    left: 8px;
   }
 }
 body {
@@ -159,7 +165,7 @@ header img {
 header .fa-arrow-left {
   position: relative;
   top: 55px;
-  margin-left: 50px;
+  margin-left: 3%;
   color: black;
 }
 header .fa-arrow-left:hover {
@@ -231,6 +237,8 @@ section #contenair .entree .menu .vert__animation {
   height: 140px;
 }
 section #contenair .entree .menu .vert__animation .fa-check-circle {
+  position: relative;
+  right: 80px;
   display: block;
   width: 1em;
   margin: auto;
@@ -240,6 +248,8 @@ section #contenair .entree .menu .vert__animation .fa-check-circle {
 }
 section #contenair .entree .menu h3 {
   margin: 8px 10px 10px 10px;
+  white-space: nowrap;
+  overflow: auto;
 }
 section #contenair .entree .menu h3:hover + .vert__animation {
   animation: vert 1000ms;
@@ -297,6 +307,8 @@ section #contenair .plat .menu .vert__animation {
   height: 140px;
 }
 section #contenair .plat .menu .vert__animation .fa-check-circle {
+  position: relative;
+  right: 80px;
   display: block;
   width: 1em;
   margin: auto;
@@ -306,6 +318,8 @@ section #contenair .plat .menu .vert__animation .fa-check-circle {
 }
 section #contenair .plat .menu h3 {
   margin: 8px 10px 10px 10px;
+  white-space: nowrap;
+  overflow: auto;
 }
 section #contenair .plat .menu h3:hover + .vert__animation {
   animation: vert 1000ms;
@@ -363,6 +377,8 @@ section #contenair .dessert .menu .vert__animation {
   height: 140px;
 }
 section #contenair .dessert .menu .vert__animation .fa-check-circle {
+  position: relative;
+  right: 80px;
   display: block;
   width: 1em;
   margin: auto;
@@ -372,6 +388,8 @@ section #contenair .dessert .menu .vert__animation .fa-check-circle {
 }
 section #contenair .dessert .menu h3 {
   margin: 8px 10px 10px 10px;
+  white-space: nowrap;
+  overflow: auto;
 }
 section #contenair .dessert .menu h3:hover + .vert__animation {
   animation: vert 1000ms;

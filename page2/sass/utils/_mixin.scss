@@ -41,6 +41,8 @@
             width: 20px;
             height: 140px;
             .fa-check-circle{
+                position: relative;
+                right: 80px;
                 display: block;
                 width: 1em;
                 margin: auto;
@@ -51,7 +53,9 @@
         }
         h3{
             margin: 8px 10px 10px 10px;
-            &:hover + .vert__animation, {
+            white-space: nowrap;
+            overflow: auto;
+            &:hover + .vert__animation{
                 animation: vert 1000ms;
                 animation-fill-mode: both;
                 & > .fa-check-circle{

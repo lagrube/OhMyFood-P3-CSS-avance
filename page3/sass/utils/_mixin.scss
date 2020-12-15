@@ -1,0 +1,79 @@
+@mixin mobile-only{
+    @media screen and (max-width: 799px)
+    {
+        @content;
+    }
+}
+
+@mixin coeur{
+    transform-origin: 50% bottom;
+    color: $greyfonce;
+    &:hover{
+        cursor: pointer;
+        animation: coeur 1500ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@mixin menu{
+    width: 90%;
+    margin: auto;
+    h2{
+        width: 30%;
+        margin-left: 20px;
+        .souligne{
+            border-bottom: 5px solid $tertiary;
+        }
+    }
+    .menu{
+        border-radius: 40px;
+        background-color: white;
+        padding: 15px 0 20px 15px;
+        margin-bottom: 40px;
+        &:hover{
+            cursor: pointer;
+        }
+        .vert__animation{
+            position: relative;
+            bottom: 80px;
+            border-radius: 0 40px 40px 0;
+            float: right;
+            width: 20px;
+            height: 140px;
+            .fa-check-circle{
+                display: block;
+                width: 1em;
+                margin: auto;
+                padding: 37px;
+                color: white;
+                opacity: 0;
+            }
+        }
+        h3{
+            margin: 8px 10px 10px 10px;
+            &:hover + .vert__animation, {
+                animation: vert 1000ms;
+                animation-fill-mode: both;
+                & > .fa-check-circle{
+                    animation: circle 1000ms linear;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+        .description_prix{
+            margin: 0 10px 0 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .suspension{
+                margin: 0 30px 0 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .gras{
+                margin: 0 20px 0;
+            }
+        }
+    }
+}

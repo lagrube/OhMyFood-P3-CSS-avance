@@ -1,3 +1,432 @@
+@keyframes entree {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes plat {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes dessert {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes coeur {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.1;
+  }
+  80% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    transform-origin: center;
+    transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
+@keyframes vert {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 150px;
+    background-color: #99E2D0;
+  }
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+body {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 799px) {
+  body {
+    width: 100%;
+    min-width: 321px;
+  }
+}
 
+/*
+    logo et titre
+        font-family: 'Shrikhand', cursive;
+    texte
+        font-family: 'Roboto', sans-serif; 
+
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+}
+
+header button {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+section h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
+}
+section h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+section .gras {
+  font-weight: bold;
+}
+
+footer p {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
+}
+
+button {
+  font-size: 1em;
+  padding: 30px;
+  border-radius: 60px;
+  margin-top: 60px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-style: none;
+}
+button:hover {
+  box-shadow: 5px 5px 20px #9356DC;
+  opacity: 0.8;
+}
+
+header {
+  margin: 0 0 80px;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  margin-bottom: 30px;
+}
+header .fa-arrow-left {
+  position: relative;
+  top: 55px;
+  margin-left: 50px;
+  color: black;
+}
+header .fa-arrow-left:hover {
+  color: #9356DC;
+}
+
+section {
+  background-color: #f2f2f2;
+}
+section img {
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+section #contenair {
+  background-color: #f2f2f2;
+  position: relative;
+  bottom: 140px;
+  z-index: 2;
+  border-radius: 100px 100px;
+}
+section #contenair .titre {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+section #contenair .titre .fa-heart {
+  transform-origin: 50% bottom;
+  color: #d6d6d6;
+}
+section #contenair .titre .fa-heart:hover {
+  cursor: pointer;
+  animation: coeur 1500ms;
+  animation-fill-mode: forwards;
+}
+section #contenair .entree {
+  transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  animation: entree 2000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section #contenair .entree h2 {
+  width: 30%;
+  margin-left: 20px;
+}
+section #contenair .entree h2 .souligne {
+  border-bottom: 5px solid #99E2D0;
+}
+section #contenair .entree .menu {
+  border-radius: 40px;
+  background-color: white;
+  padding: 15px 0 20px 15px;
+  margin-bottom: 40px;
+}
+section #contenair .entree .menu:hover {
+  cursor: pointer;
+}
+section #contenair .entree .menu .vert__animation {
+  position: relative;
+  bottom: 80px;
+  border-radius: 0 40px 40px 0;
+  float: right;
+  width: 20px;
+  height: 140px;
+}
+section #contenair .entree .menu .vert__animation .fa-check-circle {
+  display: block;
+  width: 1em;
+  margin: auto;
+  padding: 37px;
+  color: white;
+  opacity: 0;
+}
+section #contenair .entree .menu h3 {
+  margin: 8px 10px 10px 10px;
+}
+section #contenair .entree .menu h3:hover + .vert__animation {
+  animation: vert 1000ms;
+  animation-fill-mode: both;
+}
+section #contenair .entree .menu h3:hover + .vert__animation > .fa-check-circle {
+  animation: circle 1000ms linear;
+  animation-fill-mode: both;
+}
+section #contenair .entree .menu .description_prix {
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section #contenair .entree .menu .description_prix .suspension {
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section #contenair .entree .menu .description_prix .gras {
+  margin: 0 20px 0;
+}
+section #contenair .plat {
+  transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  animation: plat 2000ms 1500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section #contenair .plat h2 {
+  width: 30%;
+  margin-left: 20px;
+}
+section #contenair .plat h2 .souligne {
+  border-bottom: 5px solid #99E2D0;
+}
+section #contenair .plat .menu {
+  border-radius: 40px;
+  background-color: white;
+  padding: 15px 0 20px 15px;
+  margin-bottom: 40px;
+}
+section #contenair .plat .menu:hover {
+  cursor: pointer;
+}
+section #contenair .plat .menu .vert__animation {
+  position: relative;
+  bottom: 80px;
+  border-radius: 0 40px 40px 0;
+  float: right;
+  width: 20px;
+  height: 140px;
+}
+section #contenair .plat .menu .vert__animation .fa-check-circle {
+  display: block;
+  width: 1em;
+  margin: auto;
+  padding: 37px;
+  color: white;
+  opacity: 0;
+}
+section #contenair .plat .menu h3 {
+  margin: 8px 10px 10px 10px;
+}
+section #contenair .plat .menu h3:hover + .vert__animation {
+  animation: vert 1000ms;
+  animation-fill-mode: both;
+}
+section #contenair .plat .menu h3:hover + .vert__animation > .fa-check-circle {
+  animation: circle 1000ms linear;
+  animation-fill-mode: both;
+}
+section #contenair .plat .menu .description_prix {
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section #contenair .plat .menu .description_prix .suspension {
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section #contenair .plat .menu .description_prix .gras {
+  margin: 0 20px 0;
+}
+section #contenair .dessert {
+  transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  animation: dessert 2000ms 3000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section #contenair .dessert h2 {
+  width: 30%;
+  margin-left: 20px;
+}
+section #contenair .dessert h2 .souligne {
+  border-bottom: 5px solid #99E2D0;
+}
+section #contenair .dessert .menu {
+  border-radius: 40px;
+  background-color: white;
+  padding: 15px 0 20px 15px;
+  margin-bottom: 40px;
+}
+section #contenair .dessert .menu:hover {
+  cursor: pointer;
+}
+section #contenair .dessert .menu .vert__animation {
+  position: relative;
+  bottom: 80px;
+  border-radius: 0 40px 40px 0;
+  float: right;
+  width: 20px;
+  height: 140px;
+}
+section #contenair .dessert .menu .vert__animation .fa-check-circle {
+  display: block;
+  width: 1em;
+  margin: auto;
+  padding: 37px;
+  color: white;
+  opacity: 0;
+}
+section #contenair .dessert .menu h3 {
+  margin: 8px 10px 10px 10px;
+}
+section #contenair .dessert .menu h3:hover + .vert__animation {
+  animation: vert 1000ms;
+  animation-fill-mode: both;
+}
+section #contenair .dessert .menu h3:hover + .vert__animation > .fa-check-circle {
+  animation: circle 1000ms linear;
+  animation-fill-mode: both;
+}
+section #contenair .dessert .menu .description_prix {
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section #contenair .dessert .menu .description_prix .suspension {
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section #contenair .dessert .menu .description_prix .gras {
+  margin: 0 20px 0;
+}
+section #contenair button {
+  display: block;
+  width: 300px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+footer {
+  background-color: #313131;
+  padding: 50px 0 70px 50px;
+  color: white;
+}
+footer p {
+  margin-top: 10px;
+}
+footer ul {
+  padding-left: 0px;
+}
+footer ul li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+footer ul li .foot1 {
+  margin-right: 30px;
+}
+footer ul li .foot2 {
+  margin-right: 19px;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

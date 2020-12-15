@@ -71,3 +71,23 @@
         opacity: 1;
     }
 }
+
+@keyframes vert{
+    0% {
+        width: 20px;
+    }
+    100% { 
+        width: 150px;
+        background-color: $tertiary;
+    }
+}
+
+@keyframes circle{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}

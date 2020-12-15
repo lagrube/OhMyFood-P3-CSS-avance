@@ -1,3 +1,12 @@
+@keyframes vert {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 150px;
+    background-color: #99E2D0;
+  }
+}
 @keyframes entree {
   0% {
     transform: scale(0);
@@ -178,7 +187,7 @@ section #contenair .titre .fa-heart {
 section #contenair .titre .fa-heart:hover {
   cursor: pointer;
   animation: coeur 1500ms;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
 }
 section #contenair .entree {
   transform-origin: 50% top;
@@ -191,16 +200,33 @@ section #contenair .entree {
 section #contenair .entree h2 {
   width: 30%;
   margin-left: 20px;
+}
+section #contenair .entree h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .entree .menu {
   border-radius: 40px;
   background-color: white;
-  padding: 20px;
+  padding: 15px 0 20px 15px;
   margin-bottom: 40px;
 }
+section #contenair .entree .menu:hover {
+  cursor: pointer;
+}
+section #contenair .entree .menu .vert__animation {
+  position: relative;
+  bottom: 80px;
+  border-radius: 0 40px 40px 0;
+  float: right;
+  width: 20px;
+  height: 140px;
+}
 section #contenair .entree .menu h3 {
-  margin: 10px;
+  margin: 8px 10px 10px 10px;
+}
+section #contenair .entree .menu h3:checked + .vert__animation {
+  animation: vert 1000ms;
+  animation-fill-mode: both;
 }
 section #contenair .entree .menu .description_prix {
   margin: 0 10px 0 10px;
@@ -208,7 +234,10 @@ section #contenair .entree .menu .description_prix {
   justify-content: space-between;
 }
 section #contenair .entree .menu .description_prix p {
-  margin: 0;
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 section #contenair .plat {
   transform-origin: 50% top;
@@ -221,16 +250,33 @@ section #contenair .plat {
 section #contenair .plat h2 {
   width: 30%;
   margin-left: 20px;
+}
+section #contenair .plat h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .plat .menu {
   border-radius: 40px;
   background-color: white;
-  padding: 20px;
+  padding: 15px 0 20px 15px;
   margin-bottom: 40px;
 }
+section #contenair .plat .menu:hover {
+  cursor: pointer;
+}
+section #contenair .plat .menu .vert__animation {
+  position: relative;
+  bottom: 80px;
+  border-radius: 0 40px 40px 0;
+  float: right;
+  width: 20px;
+  height: 140px;
+}
 section #contenair .plat .menu h3 {
-  margin: 10px;
+  margin: 8px 10px 10px 10px;
+}
+section #contenair .plat .menu h3:checked + .vert__animation {
+  animation: vert 1000ms;
+  animation-fill-mode: both;
 }
 section #contenair .plat .menu .description_prix {
   margin: 0 10px 0 10px;
@@ -238,7 +284,10 @@ section #contenair .plat .menu .description_prix {
   justify-content: space-between;
 }
 section #contenair .plat .menu .description_prix p {
-  margin: 0;
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 section #contenair .dessert {
   transform-origin: 50% top;
@@ -251,16 +300,33 @@ section #contenair .dessert {
 section #contenair .dessert h2 {
   width: 30%;
   margin-left: 20px;
+}
+section #contenair .dessert h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .dessert .menu {
   border-radius: 40px;
   background-color: white;
-  padding: 20px;
+  padding: 15px 0 20px 15px;
   margin-bottom: 40px;
 }
+section #contenair .dessert .menu:hover {
+  cursor: pointer;
+}
+section #contenair .dessert .menu .vert__animation {
+  position: relative;
+  bottom: 80px;
+  border-radius: 0 40px 40px 0;
+  float: right;
+  width: 20px;
+  height: 140px;
+}
 section #contenair .dessert .menu h3 {
-  margin: 10px;
+  margin: 8px 10px 10px 10px;
+}
+section #contenair .dessert .menu h3:checked + .vert__animation {
+  animation: vert 1000ms;
+  animation-fill-mode: both;
 }
 section #contenair .dessert .menu .description_prix {
   margin: 0 10px 0 10px;
@@ -268,7 +334,10 @@ section #contenair .dessert .menu .description_prix {
   justify-content: space-between;
 }
 section #contenair .dessert .menu .description_prix p {
-  margin: 0;
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 section #contenair button {
   display: block;

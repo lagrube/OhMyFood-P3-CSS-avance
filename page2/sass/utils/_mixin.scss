@@ -40,23 +40,39 @@
             float: right;
             width: 20px;
             height: 140px;
+            .fa-check-circle{
+                display: block;
+                width: 1em;
+                margin: auto;
+                padding: 37px;
+                color: white;
+                opacity: 0;
+            }
         }
         h3{
             margin: 8px 10px 10px 10px;
-            &:checked + .vert__animation{
+            &:hover + .vert__animation, {
                 animation: vert 1000ms;
                 animation-fill-mode: both;
+                & > .fa-check-circle{
+                    animation: circle 1000ms linear;
+                    animation-fill-mode: both;
+                }
             }
         }
         .description_prix{
             margin: 0 10px 0 10px;
             display: flex;
             justify-content: space-between;
-            p{
+            align-items: center;
+            .suspension{
                 margin: 0 30px 0 0;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+            }
+            .gras{
+                margin: 0 20px 0;
             }
         }
     }
@@ -69,6 +85,16 @@
     100% { 
         width: 150px;
         background-color: $tertiary;
+    }
+}
+
+@keyframes circle{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
     }
 }
 

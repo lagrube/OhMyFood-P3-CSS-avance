@@ -24,7 +24,7 @@ body {
   width: 1200px;
   margin: auto;
 }
-@media screen and (max-width: 799px) {
+@media all and (max-width: 799px) {
   body {
     width: 100%;
     min-width: 320px;

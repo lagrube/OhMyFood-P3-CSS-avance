@@ -4,6 +4,14 @@ section{
     h2{
         padding: 70px 0 0 40px;
     }
+    @include tablette-pc{
+        .responsive-tablette{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0;
+        }
+    }
     .restaurant{
         margin: auto;
         width: 85%;
@@ -12,6 +20,9 @@ section{
         background: white;
         border-radius: 30px;
         margin-bottom: 40px;
+        @include tablette-pc{
+            width: 45%;
+        }
         .image_nouveau{
             p{
                 background-color: $tertiary;

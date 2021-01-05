@@ -2,9 +2,14 @@ body
 {
     width: 1200px;
     margin: auto;
-    @include mobile-only
-    {
+
+    @include mobile-only{
         width: 100%;
         min-width: 321px;
+    }
+
+    @include tablette-pc{
+        width: 98%;
+        min-width: 800px;
     }     
 }

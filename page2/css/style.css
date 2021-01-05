@@ -220,6 +220,7 @@ section #contenair .entree h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .entree .menu {
+  display: block;
   border-radius: 40px;
   background-color: white;
   padding: 15px 0 20px 15px;
@@ -290,6 +291,7 @@ section #contenair .plat h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .plat .menu {
+  display: block;
   border-radius: 40px;
   background-color: white;
   padding: 15px 0 20px 15px;
@@ -360,6 +362,7 @@ section #contenair .dessert h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .dessert .menu {
+  display: block;
   border-radius: 40px;
   background-color: white;
   padding: 15px 0 20px 15px;

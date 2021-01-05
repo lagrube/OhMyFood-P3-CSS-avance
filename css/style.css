@@ -30,6 +30,12 @@ body {
     min-width: 321px;
   }
 }
+@media screen and (min-width: 800px) {
+  body {
+    width: 98%;
+    min-width: 800px;
+  }
+}
 
 /*
     logo et titre
@@ -113,8 +119,19 @@ header nav {
   margin: auto;
   width: 90%;
 }
+@media screen and (min-width: 800px) {
+  header nav {
+    width: 95%;
+  }
+}
 header nav h2 {
   margin-left: 20px;
+}
+@media screen and (min-width: 800px) {
+  header nav ol {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 header nav li {
   width: 80%;
@@ -128,12 +145,27 @@ header nav li {
   list-style: none;
   counter-increment: repas;
 }
+@media screen and (min-width: 800px) {
+  header nav li {
+    width: 20%;
+    padding-right: 30px;
+  }
+}
 header nav li .nav {
   margin-right: 30px;
   margin-left: 0;
 }
 header nav li .grey {
   color: #707070;
+}
+@media screen and (min-width: 800px) {
+  header nav li .grey {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    position: relative;
+    right: 30px;
+    margin-right: 0;
+  }
 }
 header nav li:hover {
   background-color: #ece1f9;
@@ -153,6 +185,12 @@ header nav li:before {
   font-size: 0.8em;
   color: white;
 }
+@media screen and (min-width: 800px) {
+  header nav li:before {
+    bottom: 70px;
+    font-size: 1em;
+  }
+}
 
 section {
   background: rgba(223, 222, 222, 0.486);
@@ -160,6 +198,14 @@ section {
 }
 section h2 {
   padding: 70px 0 0 40px;
+}
+@media screen and (min-width: 800px) {
+  section .responsive-tablette {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
 }
 section .restaurant {
   margin: auto;
@@ -169,6 +215,11 @@ section .restaurant {
   background: white;
   border-radius: 30px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 800px) {
+  section .restaurant {
+    width: 45%;
+  }
 }
 section .restaurant .image_nouveau p {
   background-color: #99E2D0;

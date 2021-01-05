@@ -5,6 +5,13 @@
     }
 }
 
+@mixin tablette-pc{
+    @media screen and (min-width: 800px)
+    {
+        @content;
+    }
+}
+
 @mixin restaurant-description-nouveau{
     display: flex;
     justify-content: space-around;

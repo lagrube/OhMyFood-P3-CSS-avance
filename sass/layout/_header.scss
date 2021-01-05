@@ -33,8 +33,17 @@ header{
     nav{
         margin: auto;
         width: 90%;
+        @include tablette-pc{
+            width: 95%;
+        }
         h2{
             margin-left: 20px;
+        }
+        @include tablette-pc{
+            ol{
+                display: flex;
+                justify-content: space-between;
+            }
         }
         li{
             width: 80%;
@@ -47,6 +56,10 @@ header{
             background: rgba(223, 222, 222, 0.486);
             list-style: none;
             counter-increment: repas;
+            @include tablette-pc{
+                width: 20%;
+                padding-right: 30px;
+            }
 
             .nav{
                 margin-right: 30px;
@@ -54,6 +67,13 @@ header{
             }
             .grey{
                 color: rgb(112, 112, 112);
+                @include tablette-pc{
+                    font-size: 1.5em;
+                    padding-bottom: 10px;
+                    position: relative;
+                    right: 30px;
+                    margin-right: 0;
+                }
             }
             &:hover{
                 background-color: lighten($color: $primary, $amount: 33);
@@ -72,6 +92,10 @@ header{
 	        font-weight: bold;
 	        font-size: 0.8em;
             color: white;
+            @include tablette-pc{
+                bottom: 70px;
+                font-size: 1em;
+            }
             }
         }    
     }

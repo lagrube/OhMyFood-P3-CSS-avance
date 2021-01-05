@@ -27,7 +27,7 @@ body {
 @media screen and (max-width: 799px) {
   body {
     width: 100%;
-    min-width: 321px;
+    min-width: 300px;
   }
 }
 @media screen and (min-width: 800px) {

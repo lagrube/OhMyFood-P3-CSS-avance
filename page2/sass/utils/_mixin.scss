@@ -5,6 +5,13 @@
     }
 }
 
+@mixin tablette-pc{
+    @media screen and (min-width: 800px)
+    {
+        @content;
+    }
+}
+
 @mixin coeur{
     transform-origin: 50% bottom;
     color: $greyfonce;

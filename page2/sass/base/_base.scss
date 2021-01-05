@@ -6,4 +6,9 @@ body
         width: 100%;
         min-width: 321px;
     }
+    @include tablette-pc{
+        width: 98%;
+        min-width: 800px;
+        max-width: 1200px;
+    }  
 }

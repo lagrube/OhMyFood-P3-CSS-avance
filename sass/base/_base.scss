@@ -5,9 +5,11 @@ body
 
     @include mobile-only{
         width: 100%;
+        min-width: 10px;
     }
 
     @include tablette-pc{
         width: 98%;
+        max-width: 1400px;
     }     
 }

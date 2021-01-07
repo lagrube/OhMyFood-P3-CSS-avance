@@ -5,7 +5,7 @@ body
 
     @include mobile-only{
         width: 100%;
-        min-width: 10px;
+        min-width: 320px;
     }
 
     @include tablette-pc{

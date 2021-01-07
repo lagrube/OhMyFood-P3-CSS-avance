@@ -2,7 +2,7 @@ section{
     background-color: $grey;
     img{
         width: 100%;
-        height: 500px;
+        height: 300px;
         z-index: 1;
     }
     #contenair{
@@ -10,14 +10,14 @@ section{
         position: relative;
         bottom: 140px;
         z-index: 2;
-        border-radius: 100px 100px;
+        border-radius: 50px 50px;
         .titre{
             display: flex;
             width: 90%;
             margin: auto;
             justify-content: space-between;
             align-items: center;
-            padding-top: 20px;
+            padding-top: 10px;
             .fa-heart{
                 @include coeur;
             }
@@ -45,9 +45,9 @@ section{
         }
         button{
             display: block;
-            width: 300px;
+            width: 180px;
             margin: auto;
-            margin-top: 100px;  
+            margin-top: 50px;  
         }
     }
 }

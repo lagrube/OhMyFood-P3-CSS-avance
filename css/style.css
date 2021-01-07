@@ -27,14 +27,14 @@ body {
 @media all and (max-width: 799px) {
   body {
     width: 100%;
-    min-width: 799px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 800px) {
   body {
     width: 98%;
-    max-width: 1400px;
-    min-width: 1050px;
+    max-width: 1200px;
+    min-width: 800px;
   }
 }
 
@@ -47,7 +47,7 @@ body {
 */
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 h1 {
@@ -74,9 +74,9 @@ footer p {
 
 button {
   font-size: 1em;
-  padding: 30px;
+  padding: 20px;
   border-radius: 60px;
-  margin-top: 60px;
+  margin-top: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   border-style: none;
@@ -87,14 +87,14 @@ button:hover {
 }
 
 header {
-  margin: 30px 0 80px;
+  margin: 15px 0 40px;
 }
 header img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 12em;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 header #def #lieu {
   background-color: #dfdfdf;
@@ -108,13 +108,13 @@ header #def #lieu .fa-map-marker-alt {
 header #def #presentation {
   background-color: rgba(223, 222, 222, 0.486);
   text-align: center;
-  padding: 100px 0 80px;
+  padding: 50px 0 40px;
 }
 header #def #presentation h1 {
-  margin: 0 100px 40px 100px;
+  margin: 0 50px 20px 50px;
 }
 header #def #presentation p {
-  margin: 0 30px 0 30px;
+  margin: 0 15px 0 15px;
 }
 header nav {
   margin: auto;
@@ -123,6 +123,7 @@ header nav {
 @media screen and (min-width: 800px) {
   header nav {
     width: 95%;
+    margin: 0;
   }
 }
 header nav h2 {
@@ -136,10 +137,9 @@ header nav h2 {
 }
 header nav li {
   width: 80%;
-  height: auto;
-  box-shadow: 4px 4px 20px silver;
-  padding: 40px 10px 40px 30px;
-  margin-bottom: 40px;
+  box-shadow: 2px 2px 10px silver;
+  padding: 20px 5px 20px 15px;
+  margin-bottom: 20px;
   border-radius: 40px;
   border: 1px solid rgba(223, 222, 222, 0.486);
   background: rgba(223, 222, 222, 0.486);
@@ -148,8 +148,8 @@ header nav li {
 }
 @media screen and (min-width: 800px) {
   header nav li {
-    width: 20%;
-    padding-right: 30px;
+    width: 25%;
+    text-align: center;
   }
 }
 header nav li .nav {
@@ -161,44 +161,40 @@ header nav li .grey {
 }
 @media screen and (min-width: 800px) {
   header nav li .grey {
-    font-size: 1.5em;
-    padding-bottom: 10px;
-    position: relative;
-    right: 30px;
-    margin-right: 0;
+    display: none;
   }
 }
 header nav li:hover {
   background-color: #ece1f9;
-  box-shadow: 20px 20px 10px silver;
+  box-shadow: 10px 10px 5px silver;
 }
 header nav li:hover .grey {
   color: #9356DC;
 }
 header nav li:before {
   content: counter(repas);
-  padding: 8px 15px 8px 15px;
+  padding: 4px 7px 4px 7px;
   position: relative;
-  left: -52px;
+  left: -30px;
   background: #9356DC;
   border-radius: 60px;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 1em;
   color: white;
 }
 @media screen and (min-width: 800px) {
   header nav li:before {
-    bottom: 70px;
+    bottom: -10px;
     font-size: 1em;
   }
 }
 
 section {
   background: rgba(223, 222, 222, 0.486);
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 section h2 {
-  padding: 70px 0 0 40px;
+  padding: 35px 0 0 50px;
 }
 @media screen and (min-width: 800px) {
   section .responsive-tablette {
@@ -210,8 +206,8 @@ section h2 {
 }
 section .restaurant {
   margin: auto;
-  width: 85%;
-  height: 550px;
+  width: 75%;
+  height: 225px;
   border-radius: 30px;
   background: white;
   border-radius: 30px;
@@ -224,24 +220,24 @@ section .restaurant {
 }
 section .restaurant .image_nouveau p {
   background-color: #99E2D0;
-  width: 160px;
+  width: 80px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   color: #2c9c81;
   float: right;
   margin-right: 20px;
   position: relative;
-  bottom: 420px;
+  bottom: 170px;
   border-radius: 5px;
 }
 section .restaurant .image_nouveau img {
   width: 100%;
-  height: 400px;
+  height: 170px;
   border-radius: 30px 30px 0 0;
 }
 section .restaurant .image img {
   width: 100%;
-  height: 400px;
+  height: 170px;
   border-radius: 30px 30px 0 0;
 }
 section .restaurant .description__nouveau {
@@ -250,7 +246,7 @@ section .restaurant .description__nouveau {
   width: 90%;
   margin: auto;
   position: relative;
-  bottom: 110px;
+  bottom: 60px;
   align-items: center;
 }
 section .restaurant .description__nouveau .description__gauche h3 {
@@ -268,7 +264,7 @@ section .restaurant .description__nouveau .description__gauche h3 a:hover {
   color: #9356DC;
 }
 section .restaurant .description__nouveau .description__gauche p {
-  margin-top: 15px;
+  margin-top: 2px;
 }
 section .restaurant .description__nouveau .fa-heart {
   transform-origin: 50% bottom;
@@ -287,7 +283,7 @@ section .restaurant .description {
   align-items: center;
 }
 section .restaurant .description .description__gauche h3 {
-  margin: 10px 0;
+  margin: 2px 0;
 }
 section .restaurant .description .description__gauche h3 a {
   text-decoration: none;
@@ -301,7 +297,7 @@ section .restaurant .description .description__gauche h3 a:hover {
   color: #9356DC;
 }
 section .restaurant .description .description__gauche p {
-  margin-top: 15px;
+  margin-top: 2px;
 }
 section .restaurant .description .fa-heart {
   transform-origin: 50% bottom;
@@ -315,7 +311,7 @@ section .restaurant .description .fa-heart:hover {
 
 footer {
   background-color: #313131;
-  padding: 50px 0 70px 50px;
+  padding: 25px 0 25px 50px;
   color: white;
 }
 footer p {
@@ -325,7 +321,7 @@ footer ul {
   padding-left: 0px;
 }
 footer ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   list-style: none;
 }
 footer ul li .foot1 {

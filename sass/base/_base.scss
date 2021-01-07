@@ -5,12 +5,12 @@ body
 
     @include mobile-only{
         width: 100%;
-        min-width: 799px;
+        min-width: 320px;
     }
 
     @include tablette-pc{
         width: 98%;
-        max-width: 1400px;
-        min-width: 1050px;
+        max-width: 1200px;
+        min-width: 800px;
     }     
 }

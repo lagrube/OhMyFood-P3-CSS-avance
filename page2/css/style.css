@@ -73,7 +73,7 @@
     width: 20px;
   }
   100% {
-    width: 150px;
+    width: 80px;
     background-color: #99E2D0;
   }
 }
@@ -82,14 +82,17 @@
     transform: rotate(0deg);
   }
   50% {
-    position: absolute;
-    left: 30px;
+    position: relative;
+    opacity: 0.1;
+    left: 1px;
+    bottom: 12px;
   }
   100% {
     transform: rotate(360deg);
     opacity: 1;
-    position: absolute;
-    left: 8px;
+    position: relative;
+    left: -12px;
+    bottom: 12px;
   }
 }
 body {
@@ -99,7 +102,7 @@ body {
 @media screen and (max-width: 799px) {
   body {
     width: 100%;
-    min-width: 799px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -119,7 +122,7 @@ body {
 */
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 header button {
@@ -147,9 +150,9 @@ footer p {
 
 button {
   font-size: 1em;
-  padding: 30px;
+  padding: 30px 0 30px 0;
   border-radius: 60px;
-  margin-top: 60px;
+  margin-top: 20px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   border-style: none;
@@ -160,18 +163,19 @@ button:hover {
 }
 
 header {
-  margin: 0 0 80px;
+  margin: 0 0 40px;
 }
 header img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 12em;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 header .fa-arrow-left {
   position: relative;
-  top: 55px;
+  font-size: 1.5em;
+  top: 26px;
   margin-left: 3%;
   color: black;
 }
@@ -184,7 +188,7 @@ section {
 }
 section img {
   width: 100%;
-  height: 500px;
+  height: 300px;
   z-index: 1;
 }
 section #contenair {
@@ -192,7 +196,7 @@ section #contenair {
   position: relative;
   bottom: 140px;
   z-index: 2;
-  border-radius: 100px 100px;
+  border-radius: 50px 50px;
 }
 section #contenair .titre {
   display: flex;
@@ -200,7 +204,7 @@ section #contenair .titre {
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 section #contenair .titre .fa-heart {
   transform-origin: 50% bottom;
@@ -227,26 +231,26 @@ section #contenair .entree h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .entree .menu {
-  display: block;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: white;
-  padding: 15px 0 20px 15px;
-  margin-bottom: 40px;
+  padding: 8px 0 10px 8px;
+  margin-bottom: 10px;
 }
 section #contenair .entree .menu:hover {
   cursor: pointer;
 }
 section #contenair .entree .menu .vert__animation {
   position: relative;
-  bottom: 80px;
-  border-radius: 0 40px 40px 0;
+  bottom: 49px;
+  border-radius: 0 20px 20px 0;
   float: right;
-  width: 20px;
-  height: 140px;
+  width: 5px;
+  height: 78px;
 }
 section #contenair .entree .menu .vert__animation .fa-check-circle {
   position: relative;
-  right: 80px;
+  right: 100px;
+  bottom: 12px;
   display: block;
   width: 1em;
   margin: auto;
@@ -298,26 +302,26 @@ section #contenair .plat h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .plat .menu {
-  display: block;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: white;
-  padding: 15px 0 20px 15px;
-  margin-bottom: 40px;
+  padding: 8px 0 10px 8px;
+  margin-bottom: 10px;
 }
 section #contenair .plat .menu:hover {
   cursor: pointer;
 }
 section #contenair .plat .menu .vert__animation {
   position: relative;
-  bottom: 80px;
-  border-radius: 0 40px 40px 0;
+  bottom: 49px;
+  border-radius: 0 20px 20px 0;
   float: right;
-  width: 20px;
-  height: 140px;
+  width: 5px;
+  height: 78px;
 }
 section #contenair .plat .menu .vert__animation .fa-check-circle {
   position: relative;
-  right: 80px;
+  right: 100px;
+  bottom: 12px;
   display: block;
   width: 1em;
   margin: auto;
@@ -369,26 +373,26 @@ section #contenair .dessert h2 .souligne {
   border-bottom: 5px solid #99E2D0;
 }
 section #contenair .dessert .menu {
-  display: block;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: white;
-  padding: 15px 0 20px 15px;
-  margin-bottom: 40px;
+  padding: 8px 0 10px 8px;
+  margin-bottom: 10px;
 }
 section #contenair .dessert .menu:hover {
   cursor: pointer;
 }
 section #contenair .dessert .menu .vert__animation {
   position: relative;
-  bottom: 80px;
-  border-radius: 0 40px 40px 0;
+  bottom: 49px;
+  border-radius: 0 20px 20px 0;
   float: right;
-  width: 20px;
-  height: 140px;
+  width: 5px;
+  height: 78px;
 }
 section #contenair .dessert .menu .vert__animation .fa-check-circle {
   position: relative;
-  right: 80px;
+  right: 100px;
+  bottom: 12px;
   display: block;
   width: 1em;
   margin: auto;
@@ -426,14 +430,14 @@ section #contenair .dessert .menu .description_prix .gras {
 }
 section #contenair button {
   display: block;
-  width: 300px;
+  width: 180px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 footer {
   background-color: #313131;
-  padding: 50px 0 70px 50px;
+  padding: 25px 0 25px 50px;
   color: white;
 }
 footer p {
@@ -443,7 +447,7 @@ footer ul {
   padding-left: 0px;
 }
 footer ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   list-style: none;
 }
 footer ul li .foot1 {

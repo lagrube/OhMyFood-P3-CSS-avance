@@ -33,23 +33,24 @@
         }
     }
     .menu{
-        border-radius: 40px;
+        border-radius: 20px;
         background-color: white;
-        padding: 15px 0 20px 15px;
-        margin-bottom: 40px;
+        padding: 8px 0 10px 8px;
+        margin-bottom: 10px;
         &:hover{
             cursor: pointer;
         }
         .vert__animation{
             position: relative;
-            bottom: 80px;
-            border-radius: 0 40px 40px 0;
+            bottom: 49px;
+            border-radius: 0 20px 20px 0;
             float: right;
-            width: 20px;
-            height: 140px;
+            width: 5px;
+            height: 78px;
             .fa-check-circle{
                 position: relative;
-                right: 80px;
+                right: 100px;
+                bottom: 12px;
                 display: block;
                 width: 1em;
                 margin: auto;

@@ -1,15 +1,16 @@
 header{
-    margin: 0 0 80px;
+    margin: 0 0 40px;
     img{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 12em;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     .fa-arrow-left{
         position: relative;
-        top: 55px;
+        font-size: 1.5em;
+        top: 26px;
         margin-left: 3%;
         color: black;
         &:hover{

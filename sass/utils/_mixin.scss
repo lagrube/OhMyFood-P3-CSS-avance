@@ -17,7 +17,7 @@
     justify-content: space-around;
     width: 100%;
     position: relative;
-    bottom: 100px; 
+    bottom: 100px;
 }
 
 @mixin coeur{
@@ -27,7 +27,7 @@
         cursor: pointer;
         animation: coeur 1500ms;
         animation-fill-mode: both;
-    }   
+    }
 }
 
 @mixin titre__resto{

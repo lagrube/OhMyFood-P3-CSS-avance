@@ -108,8 +108,8 @@ body {
 @media screen and (min-width: 800px) {
   body {
     width: 98%;
-    max-width: 1400px;
-    min-width: 1050px;
+    max-width: 1200px;
+    min-width: 800px;
   }
 }
 
@@ -260,8 +260,9 @@ section #contenair .entree .menu .vert__animation .fa-check-circle {
 }
 section #contenair .entree .menu h3 {
   margin: 8px 10px 10px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
-  overflow: auto;
 }
 section #contenair .entree .menu h3:hover + .vert__animation {
   animation: vert 1000ms;
@@ -331,8 +332,9 @@ section #contenair .plat .menu .vert__animation .fa-check-circle {
 }
 section #contenair .plat .menu h3 {
   margin: 8px 10px 10px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
-  overflow: auto;
 }
 section #contenair .plat .menu h3:hover + .vert__animation {
   animation: vert 1000ms;
@@ -402,8 +404,9 @@ section #contenair .dessert .menu .vert__animation .fa-check-circle {
 }
 section #contenair .dessert .menu h3 {
   margin: 8px 10px 10px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
-  overflow: auto;
 }
 section #contenair .dessert .menu h3:hover + .vert__animation {
   animation: vert 1000ms;

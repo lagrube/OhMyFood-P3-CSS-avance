@@ -91,6 +91,8 @@ header{
             @include tablette-pc{
                 bottom: -10px;
                 font-size: 1em;
+                position: initial;
+                margin-right: 20px;
             }
             }
         }    

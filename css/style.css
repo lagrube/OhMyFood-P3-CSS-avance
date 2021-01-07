@@ -186,6 +186,8 @@ header nav li:before {
   header nav li:before {
     bottom: -10px;
     font-size: 1em;
+    position: initial;
+    margin-right: 20px;
   }
 }
 

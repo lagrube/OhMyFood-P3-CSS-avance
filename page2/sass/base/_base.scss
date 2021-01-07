@@ -2,13 +2,15 @@ body
 {
     width: 1200px;
     margin: auto;
+
     @include mobile-only{
         width: 100%;
-        min-width: 321px;
+        min-width: 799px;
     }
+
     @include tablette-pc{
         width: 98%;
-        min-width: 800px;
-        max-width: 1200px;
-    }  
+        max-width: 1400px;
+        min-width: 1050px;
+    }     
 }

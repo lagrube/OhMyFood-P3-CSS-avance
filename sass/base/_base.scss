@@ -11,5 +11,6 @@ body
     @include tablette-pc{
         width: 98%;
         max-width: 1400px;
+        min-width: 1050px;
     }     
 }

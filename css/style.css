@@ -24,16 +24,16 @@ body {
   width: 1200px;
   margin: auto;
 }
-@media all and (max-width: 799px) {
+@media all and (max-width: 1200px) {
   body {
     width: 100%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   body {
     width: 98%;
-    min-width: 800px;
-    max-width: 1200px;
+    min-width: 1201px;
+    max-width: 1600px;
   }
 }
 
@@ -119,7 +119,7 @@ header nav {
   margin: auto;
   width: 90%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   header nav {
     width: 95%;
   }
@@ -127,7 +127,7 @@ header nav {
 header nav h2 {
   margin-left: 20px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   header nav ol {
     display: flex;
     justify-content: space-between;
@@ -145,7 +145,7 @@ header nav li {
   list-style: none;
   counter-increment: repas;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   header nav li {
     width: 20%;
     padding-right: 30px;
@@ -158,7 +158,7 @@ header nav li .nav {
 header nav li .grey {
   color: #707070;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   header nav li .grey {
     font-size: 1.5em;
     padding-bottom: 10px;
@@ -185,7 +185,7 @@ header nav li:before {
   font-size: 0.8em;
   color: white;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   header nav li:before {
     bottom: 70px;
     font-size: 1em;
@@ -199,7 +199,7 @@ section {
 section h2 {
   padding: 70px 0 0 40px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   section .responsive-tablette {
     display: flex;
     justify-content: space-around;
@@ -216,7 +216,7 @@ section .restaurant {
   border-radius: 30px;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1201px) {
   section .restaurant {
     width: 45%;
   }

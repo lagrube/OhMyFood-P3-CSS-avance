@@ -1,0 +1,546 @@
+@-webkit-keyframes coeur {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0.1;
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
+
+@keyframes coeur {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0.1;
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+@media all and (max-width: 799px) {
+  body {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 98%;
+    max-width: 1200px;
+    min-width: 800px;
+  }
+}
+
+/*
+    logo et titre
+        font-family: 'Shrikhand', cursive;
+    texte
+        font-family: 'Roboto', sans-serif; 
+
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header button {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+header li {
+  font-weight: bold;
+}
+
+section .image_nouveau p {
+  font-weight: bold;
+}
+
+footer p {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5em;
+}
+
+button {
+  font-size: 1em;
+  padding: 20px;
+  border-radius: 60px;
+  margin-top: 30px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-style: none;
+}
+
+button:hover {
+  -webkit-box-shadow: 5px 5px 20px #9356DC;
+          box-shadow: 5px 5px 20px #9356DC;
+  opacity: 0.8;
+}
+
+header {
+  margin: 15px 0 40px;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  margin-bottom: 15px;
+}
+
+header #def #lieu {
+  background-color: #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #def #lieu .fa-map-marker-alt {
+  margin-right: 20px;
+}
+
+header #def #presentation {
+  background-color: rgba(223, 222, 222, 0.486);
+  text-align: center;
+  padding: 50px 0 40px;
+}
+
+header #def #presentation h1 {
+  margin: 0 50px 20px 50px;
+}
+
+header #def #presentation p {
+  margin: 0 15px 0 15px;
+}
+
+header nav {
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  header nav {
+    width: 95%;
+    margin: 0;
+  }
+}
+
+header nav h2 {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  header nav ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header nav li {
+  width: 90%;
+  -webkit-box-shadow: 2px 2px 10px silver;
+          box-shadow: 2px 2px 10px silver;
+  padding: 20px 5px 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  border: 1px solid rgba(223, 222, 222, 0.486);
+  background: rgba(223, 222, 222, 0.486);
+  list-style: none;
+  counter-increment: repas;
+}
+
+@media screen and (min-width: 800px) {
+  header nav li {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+header nav li .nav {
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+header nav li .grey {
+  color: #707070;
+}
+
+@media screen and (min-width: 800px) {
+  header nav li .grey {
+    display: none;
+  }
+}
+
+header nav li:hover {
+  background-color: #ece1f9;
+  -webkit-box-shadow: 10px 10px 5px silver;
+          box-shadow: 10px 10px 5px silver;
+}
+
+header nav li:hover .grey {
+  color: #9356DC;
+}
+
+header nav li:before {
+  content: counter(repas);
+  padding: 4px 7px 4px 7px;
+  position: relative;
+  left: -30px;
+  background: #9356DC;
+  border-radius: 60px;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  header nav li:before {
+    bottom: -10px;
+    font-size: 1em;
+    position: initial;
+    margin-right: 20px;
+  }
+}
+
+section {
+  background: rgba(223, 222, 222, 0.486);
+  padding-bottom: 25px;
+}
+
+section h2 {
+  padding: 35px 0 0 50px;
+}
+
+@media screen and (min-width: 800px) {
+  section .responsive-tablette {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+section .restaurant {
+  margin: auto;
+  width: 75%;
+  height: 225px;
+  border-radius: 30px;
+  background: white;
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 800px) {
+  section .restaurant {
+    width: 45%;
+  }
+}
+
+section .restaurant .image_nouveau p {
+  background-color: #99E2D0;
+  width: 80px;
+  text-align: center;
+  padding: 5px;
+  color: #2c9c81;
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  bottom: 170px;
+  border-radius: 5px;
+}
+
+section .restaurant .image_nouveau img {
+  width: 100%;
+  height: 170px;
+  border-radius: 30px 30px 0 0;
+}
+
+section .restaurant .image img {
+  width: 100%;
+  height: 170px;
+  border-radius: 30px 30px 0 0;
+}
+
+section .restaurant .description__nouveau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  bottom: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .restaurant .description__nouveau .description__gauche h3 {
+  margin: 0;
+}
+
+section .restaurant .description__nouveau .description__gauche h3 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: color 300ms, -webkit-transform 400ms;
+  transition: color 300ms, -webkit-transform 400ms;
+  transition: transform 400ms, color 300ms;
+  transition: transform 400ms, color 300ms, -webkit-transform 400ms;
+}
+
+section .restaurant .description__nouveau .description__gauche h3 a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #9356DC;
+}
+
+section .restaurant .description__nouveau .description__gauche p {
+  margin-top: 2px;
+}
+
+section .restaurant .description__nouveau .fa-heart {
+  -webkit-transform-origin: 50% bottom;
+          transform-origin: 50% bottom;
+  color: #d6d6d6;
+}
+
+section .restaurant .description__nouveau .fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation: coeur 1500ms;
+          animation: coeur 1500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+section .restaurant .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .restaurant .description .description__gauche h3 {
+  margin: 2px 0;
+}
+
+section .restaurant .description .description__gauche h3 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: color 300ms, -webkit-transform 400ms;
+  transition: color 300ms, -webkit-transform 400ms;
+  transition: transform 400ms, color 300ms;
+  transition: transform 400ms, color 300ms, -webkit-transform 400ms;
+}
+
+section .restaurant .description .description__gauche h3 a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #9356DC;
+}
+
+section .restaurant .description .description__gauche p {
+  margin-top: 2px;
+}
+
+section .restaurant .description .fa-heart {
+  -webkit-transform-origin: 50% bottom;
+          transform-origin: 50% bottom;
+  color: #d6d6d6;
+}
+
+section .restaurant .description .fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation: coeur 1500ms;
+          animation: coeur 1500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+footer {
+  background-color: #313131;
+  padding: 25px 0 25px 50px;
+  color: white;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+footer ul {
+  padding-left: 0px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+footer ul li .foot1 {
+  margin-right: 30px;
+}
+
+footer ul li .foot2 {
+  margin-right: 19px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+@-webkit-keyframes body {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#animation-page {
+  -webkit-animation: body 1000ms;
+          animation: body 1000ms;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    border-top: none;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    border-top: none;
+  }
+}
+
+.spinner {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  border-top: 2px solid #07d;
+  border-right: 2px solid transparent;
+  -webkit-animation: spinner 1200ms linear;
+          animation: spinner 1200ms linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+/*# sourceMappingURL=main.css.map */

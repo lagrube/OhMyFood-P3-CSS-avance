@@ -1,0 +1,710 @@
+@-webkit-keyframes entree {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: .3;
+  }
+  90% {
+    opacity: .6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes entree {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: .3;
+  }
+  90% {
+    opacity: .6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes plat {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: .3;
+  }
+  90% {
+    opacity: .6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes plat {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: .3;
+  }
+  90% {
+    opacity: .6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes dessert {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: .3;
+  }
+  90% {
+    opacity: .6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dessert {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: .3;
+  }
+  90% {
+    opacity: .6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes coeur {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0.1;
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
+
+@keyframes coeur {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0.1;
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 0.5;
+  }
+  90% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    color: #9356DC;
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #9356DC;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes vert {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 80px;
+    background-color: #99E2D0;
+  }
+}
+
+@keyframes vert {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 80px;
+    background-color: #99E2D0;
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    position: relative;
+    opacity: 0.1;
+    left: 1px;
+    bottom: 12px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+    position: relative;
+    left: -12px;
+    bottom: 12px;
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    position: relative;
+    opacity: 0.1;
+    left: 1px;
+    bottom: 12px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+    position: relative;
+    left: -12px;
+    bottom: 12px;
+  }
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 799px) {
+  body {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 98%;
+    max-width: 1200px;
+    min-width: 800px;
+  }
+}
+
+/*
+    logo et titre
+        font-family: 'Shrikhand', cursive;
+    texte
+        font-family: 'Roboto', sans-serif; 
+
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+header button {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+section h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5em;
+}
+
+section h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+section .gras {
+  font-weight: bold;
+}
+
+footer p {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5em;
+}
+
+button {
+  font-size: 1em;
+  padding: 30px 0 30px 0;
+  border-radius: 60px;
+  margin-top: 20px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-style: none;
+}
+
+button:hover {
+  -webkit-box-shadow: 5px 5px 20px #9356DC;
+          box-shadow: 5px 5px 20px #9356DC;
+  opacity: 0.8;
+}
+
+header {
+  margin: 0 0 40px;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  margin-bottom: 15px;
+}
+
+header .fa-arrow-left {
+  position: relative;
+  font-size: 1.5em;
+  top: 26px;
+  margin-left: 3%;
+  color: black;
+}
+
+header .fa-arrow-left:hover {
+  color: #9356DC;
+}
+
+section {
+  background-color: #f2f2f2;
+}
+
+section img {
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+}
+
+section #contenair {
+  background-color: #f2f2f2;
+  position: relative;
+  bottom: 140px;
+  z-index: 2;
+  border-radius: 50px 50px;
+}
+
+section #contenair .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+section #contenair .titre .fa-heart {
+  -webkit-transform-origin: 50% bottom;
+          transform-origin: 50% bottom;
+  color: #d6d6d6;
+}
+
+section #contenair .titre .fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation: coeur 1500ms;
+          animation: coeur 1500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+section #contenair .entree {
+  -webkit-transform-origin: 50% top;
+          transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  -webkit-animation: entree 2000ms;
+          animation: entree 2000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+section #contenair .entree h2 {
+  width: 30%;
+  margin-left: 20px;
+}
+
+section #contenair .entree h2 .souligne {
+  border-bottom: 5px solid #99E2D0;
+}
+
+section #contenair .entree .menu {
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 0 10px 8px;
+  margin-bottom: 10px;
+}
+
+section #contenair .entree .menu:hover {
+  cursor: pointer;
+}
+
+section #contenair .entree .menu .vert__animation {
+  position: relative;
+  bottom: 49px;
+  border-radius: 0 20px 20px 0;
+  float: right;
+  width: 5px;
+  height: 78px;
+}
+
+section #contenair .entree .menu .vert__animation .fa-check-circle {
+  position: relative;
+  right: 100px;
+  bottom: 12px;
+  display: block;
+  width: 1em;
+  margin: auto;
+  padding: 37px;
+  color: white;
+  opacity: 0;
+}
+
+section #contenair .entree .menu h3 {
+  margin: 8px 10px 10px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section #contenair .entree .menu h3:hover + .vert__animation {
+  -webkit-animation: vert 1000ms;
+          animation: vert 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+section #contenair .entree .menu h3:hover + .vert__animation > .fa-check-circle {
+  -webkit-animation: circle 1000ms linear;
+          animation: circle 1000ms linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+section #contenair .entree .menu .description_prix {
+  margin: 0 10px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #contenair .entree .menu .description_prix .suspension {
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section #contenair .entree .menu .description_prix .gras {
+  margin: 0 20px 0;
+}
+
+section #contenair .plat {
+  -webkit-transform-origin: 50% top;
+          transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  -webkit-animation: plat 2000ms 1500ms;
+          animation: plat 2000ms 1500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+section #contenair .plat h2 {
+  width: 30%;
+  margin-left: 20px;
+}
+
+section #contenair .plat h2 .souligne {
+  border-bottom: 5px solid #99E2D0;
+}
+
+section #contenair .plat .menu {
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 0 10px 8px;
+  margin-bottom: 10px;
+}
+
+section #contenair .plat .menu:hover {
+  cursor: pointer;
+}
+
+section #contenair .plat .menu .vert__animation {
+  position: relative;
+  bottom: 49px;
+  border-radius: 0 20px 20px 0;
+  float: right;
+  width: 5px;
+  height: 78px;
+}
+
+section #contenair .plat .menu .vert__animation .fa-check-circle {
+  position: relative;
+  right: 100px;
+  bottom: 12px;
+  display: block;
+  width: 1em;
+  margin: auto;
+  padding: 37px;
+  color: white;
+  opacity: 0;
+}
+
+section #contenair .plat .menu h3 {
+  margin: 8px 10px 10px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section #contenair .plat .menu h3:hover + .vert__animation {
+  -webkit-animation: vert 1000ms;
+          animation: vert 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+section #contenair .plat .menu h3:hover + .vert__animation > .fa-check-circle {
+  -webkit-animation: circle 1000ms linear;
+          animation: circle 1000ms linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+section #contenair .plat .menu .description_prix {
+  margin: 0 10px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #contenair .plat .menu .description_prix .suspension {
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section #contenair .plat .menu .description_prix .gras {
+  margin: 0 20px 0;
+}
+
+section #contenair .dessert {
+  -webkit-transform-origin: 50% top;
+          transform-origin: 50% top;
+  width: 90%;
+  margin: auto;
+  -webkit-animation: dessert 2000ms 3000ms;
+          animation: dessert 2000ms 3000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+section #contenair .dessert h2 {
+  width: 30%;
+  margin-left: 20px;
+}
+
+section #contenair .dessert h2 .souligne {
+  border-bottom: 5px solid #99E2D0;
+}
+
+section #contenair .dessert .menu {
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 0 10px 8px;
+  margin-bottom: 10px;
+}
+
+section #contenair .dessert .menu:hover {
+  cursor: pointer;
+}
+
+section #contenair .dessert .menu .vert__animation {
+  position: relative;
+  bottom: 49px;
+  border-radius: 0 20px 20px 0;
+  float: right;
+  width: 5px;
+  height: 78px;
+}
+
+section #contenair .dessert .menu .vert__animation .fa-check-circle {
+  position: relative;
+  right: 100px;
+  bottom: 12px;
+  display: block;
+  width: 1em;
+  margin: auto;
+  padding: 37px;
+  color: white;
+  opacity: 0;
+}
+
+section #contenair .dessert .menu h3 {
+  margin: 8px 10px 10px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section #contenair .dessert .menu h3:hover + .vert__animation {
+  -webkit-animation: vert 1000ms;
+          animation: vert 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+section #contenair .dessert .menu h3:hover + .vert__animation > .fa-check-circle {
+  -webkit-animation: circle 1000ms linear;
+          animation: circle 1000ms linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+section #contenair .dessert .menu .description_prix {
+  margin: 0 10px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #contenair .dessert .menu .description_prix .suspension {
+  margin: 0 30px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section #contenair .dessert .menu .description_prix .gras {
+  margin: 0 20px 0;
+}
+
+section #contenair button {
+  display: block;
+  width: 180px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #313131;
+  padding: 25px 0 25px 50px;
+  color: white;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+footer ul {
+  padding-left: 0px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+footer ul li .foot1 {
+  margin-right: 30px;
+}
+
+footer ul li .foot2 {
+  margin-right: 19px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

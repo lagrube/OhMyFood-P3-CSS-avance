@@ -5,18 +5,18 @@
   }
   80% {
     transform: scale(1);
-    color: #9356DC;
+    color: #9356dc;
     opacity: 0.5;
   }
   90% {
     transform-origin: center;
     transform: scale(0.8);
-    color: #9356DC;
+    color: #9356dc;
     opacity: 0.2;
   }
   100% {
     transform: scale(1);
-    color: #9356DC;
+    color: #9356dc;
     opacity: 1;
   }
 }
@@ -77,12 +77,12 @@ button {
   padding: 20px;
   border-radius: 60px;
   margin-top: 30px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   border-style: none;
 }
 button:hover {
-  box-shadow: 5px 5px 20px #9356DC;
+  box-shadow: 5px 5px 20px #9356dc;
   opacity: 0.8;
 }
 
@@ -168,14 +168,14 @@ header nav li:hover {
   box-shadow: 10px 10px 5px silver;
 }
 header nav li:hover .grey {
-  color: #9356DC;
+  color: #9356dc;
 }
 header nav li:before {
   content: counter(repas);
   padding: 4px 7px 4px 7px;
   position: relative;
   left: -30px;
-  background: #9356DC;
+  background: #9356dc;
   border-radius: 60px;
   font-weight: bold;
   font-size: 1em;
@@ -220,7 +220,7 @@ section .restaurant {
   }
 }
 section .restaurant .image_nouveau p {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 80px;
   text-align: center;
   padding: 5px;
@@ -262,7 +262,7 @@ section .restaurant .description__nouveau .description__gauche h3 a {
 }
 section .restaurant .description__nouveau .description__gauche h3 a:hover {
   transform: scale(1.2);
-  color: #9356DC;
+  color: #9356dc;
 }
 section .restaurant .description__nouveau .description__gauche p {
   margin-top: 2px;
@@ -295,7 +295,7 @@ section .restaurant .description .description__gauche h3 a {
 }
 section .restaurant .description .description__gauche h3 a:hover {
   transform: scale(1.2);
-  color: #9356DC;
+  color: #9356dc;
 }
 section .restaurant .description .description__gauche p {
   margin-top: 2px;
@@ -367,8 +367,8 @@ footer ul a {
 .spinner {
   box-sizing: border-box;
   position: fixed;
-  top: 40%;
-  left: 40%;
+  top: 45%;
+  left: 45%;
   width: 100px;
   height: 100px;
   margin: auto;
